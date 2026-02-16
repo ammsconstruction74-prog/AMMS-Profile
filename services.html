@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Services - AMMS Construction</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+body { 
+    font-family: Arial, sans-serif; 
+    padding-top: 80px;
+}
+.section { padding: 80px 0; }
+
+.navbar .nav-link {
+    color: #333;
+    font-weight: 500;
+    margin-left: 15px;
+}
+.navbar .nav-link.active {
+    font-weight: bold;
+    color: #ffc107 !important;
+    border-bottom: 2px solid #ffc107;
+}
+
+/* service image box */
+.service-box {
+    height: 280px;
+    color: white;
+    display: flex;
+    align-items: end;
+    padding: 20px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.service-box::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+}
+.service-box span {
+    position: relative;
+    z-index: 2;
+}
+
+/* white card inside image */
+.service-card {
+    background: white;
+    color: #000;
+    padding: 12px;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: normal;
+    border-radius: 6px;
+    width: 90%;
+    position: relative;
+    z-index: 2;
+}
+
+/* heading image card */
+.heading-card {
+    height: 160px;
+    background: url('https://images.unsplash.com/photo-1503387762-592deb58ef4e') center/cover no-repeat;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    position: relative;
+    overflow: hidden;
+}
+.heading-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255,255,255,0.75);
+}
+.heading-card h1 {
+    position: relative;
+    z-index: 2;
+    font-weight: bold;
+}
+
+.footer {
+    background: #111;
+    color: white;
+    padding: 40px;
+}
+
+/* bigger logo */
+.logo {
+    height: 60px;
+    margin-right: 12px;
+}
+</style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+<div class="container">
+
+<a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
+    <img src="logo.jpg" alt="Logo" class="logo">
+    AMMS Construction
+</a>
+
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+<li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
+<li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+</ul>
+</div>
+</nav>
+
+<section class="section">
+<div class="container">
+
+<!-- Heading inside image card -->
+<div class="heading-card">
+<h1>Our Services</h1>
+</div>
+
+<div class="row g-4">
+
+<div class="col-md-4">
+<div class="service-box" style="background-image:url('https://images.unsplash.com/photo-1503387762-592deb58ef4e')">
+<div>
+<span>Residential Construction</span>
+<div class="service-card">
+• Villas & Houses<br>
+• Interior & Exterior Works<br>
+• Turnkey Projects
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="service-box" style="background-image:url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab')">
+<div>
+<span>Commercial Buildings</span>
+<div class="service-card">
+• Offices & Plazas<br>
+• Retail Spaces<br>
+• Mixed-use Buildings
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="service-box" style="background-image:url('https://images.unsplash.com/photo-1504307651254-35680f356dfd')">
+<div>
+<span>Industrial Projects</span>
+<div class="service-card">
+• Factories<br>
+• Warehouses<br>
+• Production Units
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="service-box" style="background-image:url('https://images.unsplash.com/photo-1590650153855-d9e808231d41')">
+<div>
+<span>Infrastructure Works</span>
+<div class="service-card">
+• Roads & Drainage<br>
+• Site Development<br>
+• Utility Installations
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="service-box" style="background-image:url('https://images.unsplash.com/photo-1479839672679-a46483c0e7c8')">
+<div>
+<span>Renovation & Remodeling</span>
+<div class="service-card">
+• Structural Upgrades<br>
+• Interior Renovations<br>
+• Modernization Works
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="service-box" style="background-image:url('https://images.unsplash.com/photo-1504307651254-35680f356dfd')">
+<div>
+<span>Project Management</span>
+<div class="service-card">
+• Planning & Scheduling<br>
+• Cost Control<br>
+• Quality Supervision
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<footer class="footer text-center">
+<p>© 2026 AMMS Construction</p>
+</footer>
+
+</body>
+</html>
